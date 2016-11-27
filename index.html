@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SVG WTG</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <script src="js/raphael-min.js"></script>      
+        <script src="single_wtg.js"></script>
+        <script>
+            function pageLoaded(){
+                wtg.init();
+            }
+        </script>
+    </head>
+    <body onLoad="pageLoaded()">
+	<div style="width:256px; height: 512px">
+        <div id="wtg" style="width:100%; text-align: center"></div>
+        <p style="text-align:center">
+            <a href="#" onClick="wtg.start(turbine); return false;" class="btn green">Run</a>
+            <a href="#" onClick="wtg.stop(turbine); return false;" class="btn red">Pause</a>
+        </p>
+	</div>
+    </body>
+</html>
